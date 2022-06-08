@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section id="header">
+      <a href="#">
+        <img src="./Images/shopee-logo-3.png" width="40px" alt="" />
+      </a>
+      <nav>
+        <ul id="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutUs.html">About</a></li>
+          <li><a href="index.html#product">Shopping</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li>
+            <a href="#"><i class="far fa-shopping-bag"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <section id="formContanier">
+      <form action="">
+        <div class="inputs">
+          <label for="userName">User Name</label>
+          <input
+            type="text"
+            id="userName"
+            placeholder="Enter your Name"
+            onkeyup="nameValidation()"
+          />
+          <span id="errorName"></span>
+        </div>
+        <div class="inputs">
+          <label for="userEmail">Email</label>
+          <input
+            type="email"
+            id="userEmail"
+            placeholder="Enter your Email"
+            onkeyup="emailValidation()"
+          />
+          <span id="errorEmail"></span>
+        </div>
+        <div class="inputs">
+          <label for="userpass">Password</label>
+          <input
+            type="password"
+            id="userpass"
+            placeholder="Enter your password"
+            onkeyup="passwordValidation()"
+          />
+          <span id="errorPass"> </span>
+        </div>
+        <div class="inputs">
+          <label for="message">Your Message</label>
+          <textarea
+            rows="5"
+            cols="50"
+            id="message"
+            placeholder="Enter your message"
+            onkeyup="messageValidation()"
+          ></textarea>
+          <span id="errorMessage"> </span>
+        </div>
+        <button onclick="return validtion()">Submit</button>
+        <span id="errorSubmit"></span>
+      </form>
+    </section>
+
+    <footer class="section-p1">
+      <div class="footer">
+        <div class="col">
+          <img class="logo" src="./Images/shopee-logo-3.png" width="40px" alt="" />
+          <h4>contact</h4>
+          <p><b>Address: </b>Shebin ElKom - Menofia</p>
+          <p><b>Mobile: </b>(+20) 01555974762</p>
+          <p><b>Time: </b>09:00 Am - 12:00 Am</p>
+          <div class="follow">
+            <h4>Follow Us</h4>
+            <div class="icon">
+              <a href=""><i class="fab fa-facebook-f"></i></a>
+              <a href=""><i class="fab fa-twitter"></i></i></a>
+              <a href=""><i class="fab fa-instagram"></i></i></a>
+              <a href=""><i class="fab fa-youtube"></i></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <h4>About</h4>
+          <a href="">About Us</a>
+          <a href="">Delivary Information</a>
+          <a href="">Privacy Policy</a>
+          <a href="">Terms</a>
+          <a href="">Contact Us</a>
+        </div>
+        <div class="col">
+          <h4>MyAccount</h4>
+          <a href="">Sign in</a>
+          <a href="">View Cart</a>
+          <a href="">My WishList</a>
+          <a href="">Track My Order</a>
+          <a href="">Help</a>
+        </div>
+        <div class="col Pay">
+          <h4>How To Pay</h4>
+          <p>Secured payment Gateways</p>
+          <img src="./Images/Pay.jpg" width="200px" alt="" />
+        </div>
+      </div>
+      
+   <div class="copyright">
+        <p>
+        copyright &copy;2022 All rights reserved This template is made with
+        <span>&hearts;</span> by <a href="">mohamedelkady@gmail.com</a>
+      </p>
+      <div class="go-top">
+        <button onclick="gotoTop()"id="myBtn"> <i class="fas fa-arrow-up"></i></button>
+      </div>
+    </div>
+
+        
+    </footer>
+    <script src="./demo.js"></script>
+    <script src="./scriptForm.js"></script>
+  </body>
+</html>
