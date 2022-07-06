@@ -74,7 +74,7 @@ body {
 }
 /* ------------------- home --------------------------- */
 #home {
-  background-image: url(/Images/BK.1.jpg);
+  background-image: url("Images/BK.1.jpg");
   height: 90vh;
   background-size: cover;
   background-repeat: no-repeat;
